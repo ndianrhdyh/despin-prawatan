@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="shortcut icon" href="favicon - despin.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desa Prawatan</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Ikon Search -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Bootstrap Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+
+  <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container-navbar">
+
+          <!-- logo Desa Pintar -->
+            <div class="logo">
+                <img src="navbar - logo despin.png" alt="Logo Desa Pintar" />
+            </div>
+
+            <!-- tab menu -->
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="berita.html">Berita</a></li>
+
+                <li class="dropdown">
+                    <a href="datadesa.html">
+                        Data Desa <i class="bi bi-chevron-down chevron"></i>
+                    </a>
+                    <ul class="popover">
+                        <li><a href="#">Infografis</a></li>
+                        <li><a href="#">Potensi</a></li>
+                        <li><a href="#">CCTV</a></li>
+                        <li><a href="#">Perencanaan</a></li>
+                        <li><a href="#">Produk Hukum</a></li>
+                        <li><a href="#">Desa Anti Korupsi</a></li>
+                        <li><a href="#">Penjabat Pengelola Informasi dan Dokumentasi (PPID)</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="peta.html" class="current-active">Peta</a></li>
+                <li><a href="tokodesa.html">Toko Desa</a></li>
+            </ul>
+
+            <!-- tombol masuk desktop -->
+            <button class="btn-orange">Masuk</button>
+
+            <!-- tombol masuk mobile -->
+            <button class="sign-in-mobile">Masuk</button>
+
+            <!-- hamburger menu mobile -->
+            <div class="hamburger-menu">☰</div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Section Peta -->
+    <section class="peta-section">
+        <div class="peta-container">
+          <div class="peta-map">
+            <iframe
+                src="https://www.google.com/maps?q=PT%20Sandbox%20Indonesia%20Juara&hl=id&z=18&output=embed"
+                width="600"
+                height="600"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        </div>
+    </section>
+    <!-- End Section Peta -->
+
+
+    </body>
+</html>
+</body>
+    <style>
+      
+/* Body */
+ body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f7f9fc;
+      }
+
+
+      /* Umum */
+      .btn-orange{
+       font-size: 16px;
+       font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background: #ff7a00;
+    color: #fff;
+    border: 1px solid #ff7a00;
+    text-decoration: none;
+    
+      }
+
+      .btn-orange:hover{
+        background: #f57600d6;
+      }
+
+      .header-underline{
+        display: block;
+  width: 78px;
+  height: 6px;
+  background: orange;
+  margin: 0 auto 15px;
+  border-radius: 17px;
+      }
+
+      .header-judul{
+        font-size: 32px;
+  font-weight: 600;
+  color: #112352;
+  margin-bottom: 10px;
+      }
+
+      .btn-teks-lihatsemua{
+color: #5DC3B2;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: "Poppins", sans-serif;
+      text-align: none;
+      font-weight: 500;
+      vertical-align: middle;
+      }
+
+      .btn-teks-lihatsemua:hover {
+  color: #519c90;
+      }
+
+
+/* Navbar */
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+      }
+    
+      .navbar {
+        background-color: #fff;
+        margin: 0;
+        box-shadow: 0px 0px 2px rgb(214, 209, 209);
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        display: flex;
+        justify-content: center;
+    
+      }
+
+      .container-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: auto; */
+       gap: 100px;
+       width: 100%;
+       max-width: 1140px;
+       
+      }
+
+      .logo img {
+        height: 36px;
+        width: 100%;
+      }
+
+      .menu {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+        gap: 30px;
+      }
+
+      .menu li {
+        font-size: 16px;
+        align-items: center;
+        border-radius: 5px;
+        transition: 0.2s;
+      }
+
+      .menu li a {
+        text-decoration: none;
+        color: #112352;
+        font-size: 16px;
+        position: relative;
+        padding: 5px 10px;
+        border-radius: 8px; 
+        display: inline-block;
+      }
+
+      .menu li:hover {
+        background-color: #f4f4f4;
+        color: #112352;
+      }
+
+.dropdown {
+  position: relative;
+}
+
+.popover {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 8px 0;
+  display: none; 
+  min-width: 220px; 
+  z-index: 1000;
+}
+
+.popover li a {
+  display: block;
+  padding: 8px 16px;
+  color: #112352;
+  text-decoration: none;
+  transition: background 0.2s;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.popover li a:hover {
+  background: #f4f4f4;
+}
+
+ .popover.aktif {
+  display :block;
+ }
+
+.dropdown:hover .popover {
+  display: block;
+}
+
+      .menu li a:hover{
+        color: #112352;
+      }
+
+      .menu li a.current-active {
+        color: #ff7a00;
+      }
+
+      /* Tombol Masuk desktop */
+      .sign-in {
+        background-color: #ff7a00;
+        color: #fff;
+        border: 1px solid #ff7a00;
+        border-radius: 100px;
+        min-width: 100px;
+        height: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 12px 24px;
+      }                                                                         
+
+      .sign-in:hover {
+        background-color: #f57600f6;
+      }
+
+      /* Hamburger Menu (ikon ☰ untuk mobile) */
+      .hamburger-menu {
+        display: none;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      /* Chevron Down (ikon panah di Data Desa) */
+      .bi-chevron-down {
+  font-size: 11px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+}
+
+ .bi-chevron-up{
+     display: inline-flex;
+   align-items: baseline;
+   width: 6px;
+   height: 6px;
+   border-left: 1px solid #142654;
+   border-top: 1px solid #142654; 
+   transform: rotate(45deg);
+   margin-left: 8px;
+   vertical-align: middle;
+   transition: transform 0.3s;
+   }
+
+.bi-chevron-down .active {
+  transform: rotate(180deg); /* muter ke atas */
+}
+
+      /* Tombol Masuk mobile */
+      .sign-in-mobile {
+        display: none;
+      }
+
+
+   
+
+
+/* Section Peta */
+.peta-map {
+  flex: 1;
+  height: 100vh;
+  overflow: hidden; /* untuk menghilangkan scroll */ 
+}
+
+.peta-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Footer */
+.footer {
+  background: #2b2c2b;
+  box-shadow: 0 0 4px rgba(205, 205, 205, 0.5);
+  width: 100%;
+  padding: 40px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Bagian atas: logo dan menu */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-footer {
+  width: 100%;
+  height: 36px;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.footer-menu li {
+  position: relative;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 5px 8px;
+}
+
+.footer-menu li a.footer-menu-current-active {
+  color: #ff7a00;
+}
+
+.footer-menu li a:hover {
+  background-color: #f4f4f4;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Dropdown menu */
+.footer-popover {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background: #2b2c2b;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  list-style: none;
+}
+
+.dropdown:hover .footer-popover {
+  display: block;
+}
+
+.footer-popover li a {
+  color: #fff;
+  padding: 8px 16px;
+  display: block;
+}
+
+.footer-popover li a:hover {
+  background: #fff;
+  color: #2b2c2b;
+  border-radius: 4px;
+}
+
+/* Garis pemisah */
+.footer hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Bagian bawah: ikon media sosial */
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  left: 200px;
+}
+
+
+.socials :hover {
+  color: #ff7a00;
+}
+
+
+</style>
